@@ -152,8 +152,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
     return NULL;
 }
 
-Pair * firstTreeMap(TreeMap * tree) {
-    return NULL;
+Pair * firstTreeMap(TreeMap * tree) 
+{
+    TreeNode *nodo = minimum(tree->root);
+    tree->current = nodo;
+    return nodo->pair;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
