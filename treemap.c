@@ -168,7 +168,7 @@ Pair * upperBound(TreeMap * tree, void* key)
 
     if(upper != NULL) 
     {
-        tree->current = upper;
+        tree->current = tree->current;
         return upper->pair;
     }
     
